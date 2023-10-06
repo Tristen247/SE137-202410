@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="header">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tristen Jussaume" >
+    <meta name="description" content="W1 Bio Assignment" >
+    <!--Tristen Jussaume, id = header, 7/31/2023-->
+    <title>W1 | Bio</title>
+
+    <style>
+        body {
+            background-color: rgb(200, 200, 200);
+
+        }
+        #bio{
+            font-size: 20pt;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        #school{
+            font-size: 28pt;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: oblique;
+            font-weight: bold;
+            
+            
+        }
+        
+        
+        #hobbies{
+            font-size: 28pt;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: oblique;
+            font-weight: bold;
+            
+            
+            
+        }
+
+        h2{
+            font-style: oblique;
+            font-weight: bold;
+            text-align: center;
+            font-size: 44pt;
+        
+        }
+
+        h3{
+        
+            font-size: 28pt; 
+            margin-left: 40px;
+        }
+
+        #footer{
+            font-size: 20px;
+        }
+
+       
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+         
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!--the wrapper div holds all the content on the site-->
+    <div id="wrapper">
+
+        <div id="header"> 
+                
+            <h1>Tristen Jussaume</h1>
+
+        </div>
+        <!--Header------>
+
+        <div id="nav">
+            <a href="index.html">ALL CONTENT |</a>
+            <!--Jump links-->
+            <a href="#bio">MY BIOGRAPHY |</a>
+            <a href="#school">SCHOOL |</a>
+            <a href="#hobbies">HOBBIES |</a>
+            <a href="#footer">BOTTOM OF PAGE |</a>
+        </div><!-- End-Nav------->
+
+        <div id="content">
+
+            <div id="bio">
+                <h2>Bio</h2>
+                <p>My name is <strong>Tristen Jussaume</strong> i'm 27 from <em>Warwick, Rhode Island</em> and am currently attenting <b>New England Tech</b> for my Associates degree in <i>Software Engineering.</i> I love music, video games and spending time with my fiance, friends, and family. Other things I like to do in my free time are cooking, skateboarding, and driving my car. 
+                </p>
+                <br>
+                <img src="Images/RI logo.webp" alt="RI Logo" style="width:300px;">
+            </div><!--End-Bio------>
+
+            <div id="school">
+                <br>
+                <h2>My Schools</h2>
+                <ol>
+                    <li>CHS</li>
+                    <li>WWHS</li>
+                    <li>NEIT</li>
+                </ol>
+                
+                <img src="images/NEIT-EG.jpg" alt="New England Tech EG" style="Width:750px;">
+                
+            </div><!--End-School-->
+
+            <div id="hobbies">
+                <br>
+                <h2>~Hobbies~</h2>
+                <br>
+                <h3>My Favorite Games to Play Right Now:</h3>
+                <br>
+                <ul>
+                    <li>Diablo 3</li>
+                    <br>
+                        <img src="Images/Not-the-cow-level.jpeg" alt="D3 Cow Level" style="width:750px;" >
+                    <br>
+                    <br>
+                    <li>Diablo 4</li>
+                    <br>
+                        <img src="Images/D4 Lilith.avif" alt="Diablo 4 Lilith" style="width:750px;">
+                    <br>
+                    <br>
+                    <li>God of War</li>
+                    <br>
+                        <img src="Images/GOW.jpeg" alt="God of War" style="width:750px;">
+                    <br>
+                    <br>
+                    <li>Fallout 4</li>
+                    <br>
+                        <img src="Images/Fallout 4 .webp" alt="Fall out 4" style="width: 750px; ">
+                    <br>
+                    <br>
+                    <li>Starfield</li>
+                    <br>
+                        <img src="Images/Starfield.jpeg" alt ="Starfield" style="width: 750px;">
+                    <br>
+                    <br>
+                </ul>
+                
+                
+                
+                
+            </div><!--Hobbies-->
+
+        </div><!--#CONTENT-->
+
+        <div id="footer">
+
+            <hr>
+            <p><b>&copy; T Jussaume | SE137 | 202410</b></p>
+            <br>
+            <a href="#wrapper"> Back to top</a>
+            <a href="#schools">Schools</a>
+            <a href="#hobbies">Hobbies</a>
+
+        </div><!--Footer-->
+
+    </div><!--#Wrapper-->
+    <script>
+
+    const linkTextToDivId = {
+        "MY BIOGRAPHY": "bio",
+        "SCHOOL": "school",
+        "HOBBIES": "hobbies"
+    };
+    
+    var a = Array.from(document.querySelectorAll("#nav a"));
+    var div = document.querySelectorAll("#content > div");
+    
+    for (let i = 0; i < a.length; i++) {
+        a[i].addEventListener("click", hide);
+    }
+    
+    function hide(e) {
+        e.preventDefault();
+    
+        for (let i = 0; i < div.length; i++) {
+            div[i].style.display = "none";
+        }
+    
+        const clickedText = e.target.textContent.trim().replace(' |', '');
+        const divIdToShow = linkTextToDivId[clickedText];
+        
+        if (divIdToShow) {
+            document.getElementById(divIdToShow).style.display = "block";
+        }
+    }
+    
+    </script>
+    
+
+</body>
+</html>

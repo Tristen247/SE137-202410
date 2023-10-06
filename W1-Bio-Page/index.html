@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W1 Bio</title>
+
+    <style>
+
+        body{
+            background-color: rgb(100, 111, 98);
+        }
+
+        .hide {
+            display:none;
+        }
+
+        .green{
+            font-size: 40px;
+            text-align: center;
+            color: rgb(0, 175, 0);
+        } 
+
+        .pink{
+            color:pink
+        }
+
+        #nav{
+            text-align: center;
+            background-color: rgb(0, 175, 0);
+            font-size: 22px;
+        }
+
+        #bio{
+            text-align: center;
+            font-size: 20pt;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+
+        #ed{
+            font-size: 20pt;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #hobbies{
+            font-size: 20pt;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            display:block
+            
+        }
+
+        h1{
+            background-color: black;
+        }
+
+        
+        
+    
+    </style>
+
+</head>
+<body>
+    
+<h1 class="green">Tristen Jussaume</h1> <!--Top-->
+
+<hr> 
+
+<div id="nav" >
+
+    <a href="#">Bio</a>
+    <a href="#">Education</a>
+    <a href="#">Hobbies</a>
+    <hr>
+
+</div><!--End nav-->
+
+<div id="main">
+
+    <div id="bio">
+
+        <h2 class="pink">My Bio</h2>
+        <img src="Images/MCR-Concert.jpeg" alt="MCR-Concert" style="width: 375px;">
+        <p>My name is <strong>Tristen Jussaume</strong> i'm 27 from <em>Warwick, Rhode Island</em> and am currently attenting <b>New England Tech</b> for my Associates degree in <i>Software Engineering.</i> I love music, video games and spending time with my fiance, friends, and family. Other things I like to do in my free time are cooking, watching Netflix or youtube and driving my car. I have a 4 year old boy named Grayson, hes so smart and growing so fast it makes me sad at sometimes. I can't wait to be able to travel more, buy my first home, and put away some savings.</p> 
+        <br>
+        <br>
+        <br> 
+        <hr>
+    </div><!--End bio-->
+
+    <div id="ed" class="hide">
+        <h2 class="pink">Schooling</h2>
+        <ul>
+        <li>Coventry High School</li>
+        <li>West Warwick High School</li>
+        <li><a href="https://www.neit.edu" target="_blank">New England Institute of Technology</a></li>
+        </ul>
+        <br>
+        <br>
+        <img src="Images/NEIT-EG.jpg" alt="New England Tech" style="width: 700px;">
+        <br>
+        <br>
+        <br> 
+        <hr>
+    </div><!--End school-->
+    
+    <div id="hobbies" class="hide">
+        <h2 class="pink">Hobbies</h2>
+        <ol>
+            <li>Video Games</li>
+            <li>Cooking</li>
+            <li>Watching TV</li>
+        </ol>
+        <br>
+        <br>
+        <img src="Images/myPC.jpeg" alt="my Pc" style="width: 700px;">
+        <br>
+        <br>
+        <br> 
+        <hr>
+    </div><!--End hobbies-->
+
+
+
+</div>
+
+<div id="footer">
+    <p>&copy;2023 TJUSSAUME | W1 Assignment</p> <!--Bottom-->
+</div>
+
+<script>
+       
+    var a = Array.from(document.querySelectorAll(`#nav a`));
+
+    for(let i=0; i<a.length; i++)
+    {
+        a[i].addEventListener(`click`, hide)
+    }
+   
+    function hide(e)
+    {
+        e.preventDefault();
+
+        var div = document.querySelectorAll(`#main div`)
+       
+        for(let i=0; i<div.length; i++)
+        {
+            div[i].classList.add(`hide`);
+        }
+       
+        div[a.indexOf(e.target)].classList.remove(`hide`);
+    }
+ </script>
+    
+
+
+</body>
+</html>
