@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* Check out Sticky header*/
+
+.name
+{
+    font-family: 'Lobster', sans-serif;
+    font-size: 55pt;
+    font-style: oblique;
+    text-align: center;
+    border-color: rgb(190, 190, 190);
+    border-style: solid;
+    border-width: 3px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: rgb(190, 190, 190);
+    padding-bottom: 20px;
+    
+   
+} 
+.heads
+{   
+    font-family: 'Lobster', sans-serif;
+    text-decoration: underline;
+    font-size: 44pt;
+    color: rgb(181, 130, 232);
+    padding-bottom: 5%;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(Images/desert-doom-sand-dunes-dark-background-monochrome-landscape-3440x1440-6409.jpg) no-repeat, scroll;
+    background-size: cover;
+}
+
+
+
+#nav
+{   
+    
+    font-family: 'Lobster', sans-serif;
+    color:green;
+    text-decoration: none;
+    text-align:center;
+    font-size: 26px;
+    border-color: rgb(190, 190, 190);
+    border-style: solid;
+    border-width: 3px;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    padding-bottom: 20px;
+    margin-bottom: auto;
+    margin-top: -25px
+  
+    
+    
+}
+
+#bio
+{
+    width: 750px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    padding-bottom: 10%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 26pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    box-shadow: 0 0 10px 5px rgba(254, 254, 254, 0.7);
+    
+}
+
+#ed
+{
+    width: 750px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    padding-bottom: 10%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 26pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    box-shadow: 0 0 10px 5px rgba(254, 254, 254, 0.7);
+    
+    
+}
+
+#hobbies
+{
+    width: 750px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    padding-bottom: 10%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 26pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    box-shadow: 0 0 10px 5px rgba(254, 254, 254, 0.7);
+}
+#footer
+{
+    color:rgb(190, 190, 190)
+}
+ul, ol{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+li{
+    margin-bottom: 5%;
+}
+
+a
+{
+    display: block;
+    padding: 3px;
+    font-weight: bold;
+    color: rgb(84, 238, 84)
+}
+.hide 
+{
+    display:none;
+}
+
+img
+{   
+    box-shadow: 0 0 15px 5px rgba(254, 254, 254, 0.7);
+    border: 2px solid;
+    border-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    display:block  
+       
+}
+
+a:link, a:visited{
+  background-color: rgb(149, 149, 149);
+  color: white;
+  padding: 14px 25px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+
+
+    /*text-decoration: none;*/
+
+}
+
+a:hover, a:active{
+    background-color: rgb(190, 190, 190);
+  
+    /*background-color: rgb(48, 48, 48);
+    transition: all;*/
+}
