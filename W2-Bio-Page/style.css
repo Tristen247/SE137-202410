@@ -23,7 +23,7 @@
     font-family: 'Lobster', sans-serif;
     text-decoration: underline;
     font-size: 44pt;
-    color: rgb(181, 130, 232);
+    color: rgb(66, 247, 147);
     padding-bottom: 5%;
 }
 body
@@ -40,7 +40,7 @@ body
 {   
     
     font-family: 'Lobster', sans-serif;
-    color:green;
+    
     text-decoration: none;
     text-align:center;
     font-size: 26px;
@@ -52,10 +52,7 @@ body
     border-left-style: none;
     padding-bottom: 20px;
     margin-bottom: auto;
-    margin-top: -25px
-  
-    
-    
+    margin-top: -25px       
 }
 
 #bio
@@ -71,8 +68,7 @@ body
     font-size: 26pt;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: aliceblue;
-    box-shadow: 0 0 10px 5px rgba(254, 254, 254, 0.7);
-    
+    box-shadow: 0 0 10px 5px rgba(254, 254, 254, 0.7); 
 }
 
 #ed
@@ -88,9 +84,7 @@ body
     font-size: 26pt;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: aliceblue;
-    box-shadow: 0 0 10px 5px rgba(254, 254, 254, 0.7);
-    
-    
+    box-shadow: 0 0 10px 5px rgba(254, 254, 254, 0.7);    
 }
 
 #hobbies
@@ -126,7 +120,6 @@ a
     display: block;
     padding: 3px;
     font-weight: bold;
-    color: rgb(84, 238, 84)
 }
 .hide 
 {
@@ -145,10 +138,10 @@ img
 }
 
 a:link, a:visited{
-  background-color: rgb(149, 149, 149);
-  color: white;
+  background-color: rgb(190, 190, 190);
+  color: rgb(161, 74, 248);
   padding: 14px 25px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(181, 130, 232);
   border-radius: 50%;
   text-align: center;
   text-decoration: none;
@@ -156,14 +149,12 @@ a:link, a:visited{
   width: 150px;
   height: 40px;
   line-height: 40px;
-
-
     /*text-decoration: none;*/
 
 }
 
 a:hover, a:active{
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(170, 170, 170);
   
     /*background-color: rgb(48, 48, 48);
     transition: all;*/
