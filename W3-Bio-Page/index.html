@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W1 Bio</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="name">
+<h1>Tristen Jussaume</h1> <!--Top-->
+</div>
+
+<div id="nav" >
+    <a href="#">Bio</a>
+    <a href="#">Education</a>
+    <a href="#">Hobbies</a>
+</div><!--End nav-->
+
+<div id="main">
+
+    <div id="bio">
+
+        <h2 class="heads">My Bio</h2>
+        
+        <p id="myself">My name is <strong>Tristen Jussaume</strong> i'm 27 from <em>Warwick, Rhode Island</em> and am currently attenting <b>New England Tech</b> for my Associates degree in <i>Software Engineering.</i> I love music, video games and spending time with my fiance, friends, and family. Other things I like to do in my free time are cooking, watching Netflix or youtube and driving my car. I have a 4 year old boy named Grayson, hes so smart and growing so fast it makes me sad at sometimes. I can't wait to be able to travel more, buy my first home, and put away some savings.</p> 
+        
+        <p id="myself">When I can afford to buy a home I want to live in rural area not to far from town or city. When I can afford to Travel I would like to do a tour of Europe, visit Hawaii, and go skiing or snowboarding in New Hampshire once or a few times a year with my family. I hope that I will be able to support my son if he decides to go to college so that he wont have to work as hard as I am right now and he will be able to get a head start on life. </p>
+        
+    </div><!--End bio-->
+
+    <div id="ed" class="hide">
+        <h2 class="heads">My Schooling</h2>
+        <ul>
+        <li>Coventry High School</li>
+        <li>West Warwick High School</li>
+        <li><a href="https://www.neit.edu" target="_blank">NEIT</a></li>
+        </ul>
+        
+        
+        
+    </div><!--End school-->
+
+    <div id="hobbies" class="hide">
+        <h2 class="heads">My Hobbies</h2>
+
+        <ol>
+            <li>Video Games</li>
+            <li>Cooking</li>
+            <li>Watching TV</li>
+        </ol>
+
+        
+        <!--<img src="Images/myPC.jpeg" alt="my PC" style="width: 750px;">-->
+        
+        
+    </div><!--End hobbies-->
+
+    <div id="footer">
+        <p>&copy;2023 TJUSSAUME</p> <!--Bottom-->
+    </div>
+
+</div>
+
+
+
+<script>
+       
+    var a = Array.from(document.querySelectorAll(`#nav a`));
+
+    for(let i=0; i<a.length; i++)
+    {
+        a[i].addEventListener(`click`, hide)
+    }
+   
+    function hide(e)
+    {
+        e.preventDefault();
+
+        var div = document.querySelectorAll(`#main div`)
+       
+        for(let i=0; i<div.length; i++)
+        {
+            div[i].classList.add(`hide`);
+        }
+       
+        div[a.indexOf(e.target)].classList.remove(`hide`);
+    }
+ </script>
+    
+
+
+</body>
+</html>

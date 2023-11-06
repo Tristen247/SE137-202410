@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html, body {
+    height: 100%
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(121, 120, 120); 
+
+}
+
+#name
+{
+    display: grid;
+    grid-template-areas: "name";
+    margin: 10px;
+    border: solid 1px;
+    border-color: rgb(175, 175, 175);
+    background-color: rgb(175, 175, 175);
+    font-family: 'Lobster', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+
+#nav{
+    display: none;
+}
+
+
+#main {
+    display: grid;
+     /* Adjust the fraction of space each column takes */
+    grid-template-rows: auto auto auto; /* You can specify the height of rows, 'auto' means it will adjust based on content */
+    grid-template-columns: 3fr 2fr 1fr ;
+    grid-template-areas: 
+        "bio bio bio"
+        "hobbies hobbies ed"
+        "footer footer footer";
+        
+    gap: 5px;
+    min-height: 100vh;
+}
+
+#bio {
+    grid-area: bio;
+    font-family: 'Lobster', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(175, 175, 175);
+    border: solid 1px;
+    border-color: rgb(175, 175, 175);
+    box-sizing: border-box
+}
+
+#ed {
+    grid-area: ed;
+    font-family: 'Lobster', sans-serif;
+    margin: 10px;
+    font-size: 36px;
+    background-color: rgb(175, 175, 175);
+    border: solid 1px;
+    border-color: rgb(175, 175, 175);
+    padding: 50px;
+    width: 450px;
+    box-sizing: border-box
+    
+
+}
+
+#hobbies 
+{
+    grid-area: hobbies;
+    font-family: 'Lobster', sans-serif;
+    font-size: 36px;
+    margin: 10px;
+    border: solid 1px; 
+    border-color: black;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 600px;
+    max-width: 100%;
+    background: url(Images/myPC.jpeg), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-blend-mode: luminosity;
+    padding: 50px;
+    
+    color:aliceblue
+}
+
+
+#footer 
+{
+    grid-area: footer;
+    font-family: 'Lobster', sans-serif;
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(175, 175, 175);
+
+    box-sizing:border-box;
+    
+    max-width: 100%;
+    border: solid 1px;
+    border-color: rgb(175, 175, 175);
+    text-align: center;
+}
+
+#myself{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+h2{
+    font-family: 'Lobster', sans-serif;
+    font-size: 36px;
+}
+a:link, a:visited{
+    background-color: rgb(190, 190, 190);
+    color: rgb(161, 74, 248);
+    padding: 14px 25px;
+    border: 2px solid rgb(181, 130, 232);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+      /*text-decoration: none;*/
+  
+  }
+  
+  a:hover, a:active{
+      background-color: rgb(170, 170, 170);
+  }
