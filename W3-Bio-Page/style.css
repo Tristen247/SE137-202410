@@ -67,7 +67,7 @@ body
     border: solid 1px;
     border-color: rgb(175, 175, 175);
     padding: 50px;
-    width: 450px;
+    
     box-sizing: border-box
     
 
@@ -82,8 +82,6 @@ body
     border: solid 1px; 
     border-color: black;
     box-sizing: border-box;
-    width: 1000px;
-    height: 600px;
     max-width: 100%;
     background: url(Images/myPC.jpeg), lightgray 50% / cover no-repeat;
     background-position: center;
