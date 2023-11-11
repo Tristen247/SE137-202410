@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    height: 1080px;
+    width: 1820px;
+}
+
+body{
+    margin: auto;
+}
+
+
+header
+{
+    height: 100px;
+    background-color: #070707;
+}
+
+
+#main
+{
+    display: contents;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'ban ban ban ban col'
+                         'dvd dvd flg flg col'
+                         'fot fot fot fot fot';
+    grid-template-columns: 360px 343px 340px 340px 355px;
+    grid-template-rows: 535px 515px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    background-color: #282828;
+    
+}
+
+h1
+{
+    color: red;
+    font-family: Teko;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 30px;
+    
+}
+
+
+#social 
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 41px;
+    border: solid 1px
+    
+}
+
+#soc
+{
+    height: 40px;
+    width: 40px;
+    
+    
+    
+}
+ 
+#twit
+{
+    border-left: solid 5px rgb(0, 0, 0);
+    
+
+}
+
+/*Banner-----*/
+.banner 
+{
+    grid-area: ban;
+    
+}
+
+#jason-banner
+{
+    width: 1440px;
+}
+
+
+/*DVD----*/
+.dvd
+{
+    grid-area: dvd;
+    display: flex;
+    border-top: 5px solid red;
+    background-color: #393939;
+    
+    margin-left: 20px;
+    
+}
+
+#dvdposter
+{
+    
+    margin-bottom: -3px;
+
+    width: 300px;
+    height: 510px;
+}
+
+#right-side
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 18px;
+}
+
+ h2
+{
+    color: red;
+    font-size: 26px;
+    font-family:'Rock Salt', cursive;
+    font-weight: 400;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+    gap:20px
+}
+
+#summary{
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border-top: 4px solid red;
+    line-height: 27px;
+    margin-left: 25px;
+    padding-top: 20px;
+}
+
+#blueray-btm{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#amazon-purchase
+{
+    margin-top: -175px;
+    margin-left: 160px;
+}
+
+#blueray 
+{
+    margin-top: 15px;
+    margin-left: -170px;
+
+    width: 140px;
+    height: 175px;
+}
+
+.dvd a
+{
+    
+    color: teal;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
+   
+    border: solid 1px;
+    border-color: rgb(175, 175, 175);
+}
+
+#price
+{
+   margin-left: 13px; 
+   margin-top: 15px;
+   color: white;
+   text-decoration: underline;
+   font-size: 110px;
+   font-family: 'Teko';
+   font-weight: 700;  
+}
+/* flag -----*/
+
+.flag
+{
+    grid-area: flg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px solid;
+    border-color: red;
+    background-color: #393939;   
+}
+
+.flag img{
+    margin-top: 15px;
+    width: 630px;
+    
+}
+
+.flag p{   
+    font-family: 'poppins';
+    color: white;
+    font-size: 26px;
+    margin: 15px 25px
+}
+
+/*Right side column*/
+
+.far-right-column{
+    grid-area: col;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #393939;
+    margin-bottom: -70px;
+    
+}
+
+.far-right-column p
+{
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 28px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+
+}
+
+.far-right-column span
+{
+    color: red
+}
+
+ #sign
+{
+    width: 325px;
+    height: 325px;
+}
+
+ 
+
+#jason-underwater
+{
+    margin-top: 30px;
+    width: 320px;
+    height: 185px;
+}
+
+/*footer-----*/
+footer{
+    grid-area: fot;
+    height: 60px;
+    background-color: #070707;
+}
+
+footer p{
+    color: white;
+    font-size: 12px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    margin: 20px auto;
+    margin-left: 30px;
+}
