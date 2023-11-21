@@ -1,0 +1,34 @@
+html, body {
+    height: 100%
+}
+
+main{
+    display: flex;
+    align-items: stretch;
+    min-height: 100%;
+
+}
+
+nav{
+    background-color: black;
+    width: 50px;
+    border: 1px solid black;
+}
+
+div{
+    background-color: gray;
+    width: 150px;
+    transition: all 1s;
+    overflow: hidden;
+
+}
+
+.close{
+    width: 0px;
+    transition: all 1s;
+}
+
+details{
+    width: 120px;
+    float: right;
+}
